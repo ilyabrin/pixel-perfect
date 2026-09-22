@@ -35,7 +35,7 @@ jobs:
       # Go module caching is pointless here by contrast, since the project has
       # no third-party dependencies at all.
       - name: Cache staticcheck
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/go/bin/staticcheck
           key: staticcheck-${{ env.STATICCHECK_VERSION }}-${{ runner.os }}
